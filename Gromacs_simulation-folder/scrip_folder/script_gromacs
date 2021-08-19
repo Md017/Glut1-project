@@ -1,0 +1,66 @@
+
+ 
+ 
+ gmx distance -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -select 'com of group s1 plus resname Cl' -oav distav1.xvg -oxyz distxyz1.xvg -oall distall1.xvg
+ 
+ gmx distance -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -select 'com of group s2 plus resname Cl' -oav distav2.xvg -oxyz distxyz2.xvg -oall distall2.xvg
+ 
+ gmx distance -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -select 'com of group s3 plus resname Cl' -oav distav3.xvg -oxyz distxyz3.xvg -oall distall3.xvg
+ 
+ gmx distance -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -select 'com of group s4 plus resname Cl' -oav distav4.xvg -oxyz distxyz4.xvg -oall distall4.xvg
+ 
+ gmx distance -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -select 'com of group s5 plus resname Cl' -oav distav5.xvg -oxyz distxyz5.xvg -oall distall5.xvg
+ 
+ 
+
+************************wtih paidsit**************************
+gmx pairdist -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -ref 'com of group s1' -sel 'atomname CL' -o pairdist1.xvg -xvg xmgrace -selgrouping none
+gmx pairdist -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -ref 'com of group s2' -sel 'atomname CL' -o pairdist2.xvg -xvg xmgrace -selgrouping none
+gmx pairdist -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -ref 'com of group s3' -sel 'atomname CL' -o pairdist3.xvg -xvg xmgrace -selgrouping none
+gmx pairdist -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -ref 'com of group s4' -sel 'atomname CL' -o pairdist4.xvg -xvg xmgrace -selgrouping none
+gmx pairdist -f wt_rep-100ps.xtc -s wt_rep.tpr -n extra_group.ndx -ref 'com of group s5' -sel 'atomname CL' -o pairdist5.xvg -xvg xmgrace -selgrouping none
+
+
+
+
+
+
+r93|r94|r223|r218|r209
+r334|r333|r330|r454|r455
+r153|r400|r256|r142|r92|r88|r146|212|r213|r143
+r248|r217|r253|r216
+r209|r223|r230|r11
+
+
+
+**********************************calcul de fragment de" trajectpoire****************************
+
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 10900 -e 11100 -o traj200ps_cl27_site1.xtc
+
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 100 -e 120 -o traj20ps_cl27_site1.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1171200 -e 11766800 -o trajps_cl97_site2.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1171300 -e 1176700 -o trajp5ns_cl97_site2.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1171300 -e 1176700 -o trajp5ns_cl97_site2.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 27000 -e 29000 -o trajp200ps_cl11_site3.xtc
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 212400 -e 213600 -o trajp1200ps_cl6_site3.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 115800 -e 115990 -o traj190ps_cl61_site3.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 115800 -e 115990 -o traj190ps_cl61_site3.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1158800 -e 1159800 -o traj1ns_cl61_site3.xtc 
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1158800 -e 1159800 -o traj1ns_cl61_site3.xtc 
+
+gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1355200 -e 1357200 -o traj2ns_cl78_site3.xtc
+ gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1431600 -e 1431800 -o traj200ps_cl38_site3.xtc 
+ gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1563600 -e 1563800 -o traj200ps_cl80_site3.xtc
+ gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1158800 -e 1159000 -o traj200ps_cl61_site3.xtc
+ 
+ gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1276600 -e 1276800 -o traj200ps_cl46_site4.xtc 
+ gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1588700 -e 1588900 -o traj200ps_cl24_site4.xtc 
+  gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1603000 -e 1603200 -o traj200ps_cl29_site4.xtc 
+  gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1263100 -e 1263300 -o traj200ps_cl26_site5.xtc
+  gmx trjconv -f wt_rep-100ps.xtc  -s wt_rep.tpr -b 1945500 -e 1945700-o traj200ps_cl25_site5.xtc
+  
+  
+  gmx grompp -f mdout_new.mdp  -c my_prot.pdb  -p glut1+glc_in_bilayer_new.top  -o mywt_rep_dry.tpr
+  
+ 
+
