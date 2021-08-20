@@ -1,3 +1,3 @@
-# Glut1-project
+# sujet et but du projet
 
-#project
+* 
