@@ -32,8 +32,8 @@ Ce dossier comporte 5 sous dossier dont:
 ## fragments_trajectoires_pour_chaque_chlore
 ce dossier contient les fraguement de trajectoires que l'on a extrait pour chaque ions chlore identifiés ainsi que les fichiers mywt_rep_dry.tpr et glut1+glc_in_bilayer_new.top que l'on a créé en modifiant les origrinaux( enlever tous les atoms non protéiques) pour lancer la simulation sur gRINN
 ## gRinn_results 
-ce dossier contient les résulats obtenu de gRINN pour chaque ions chlore identifié. A chaque ion chlore correspond un sous-dossier contenant les résultats pour cet ion.
-* csv_files contient les fichiers csv conentant des informations sur le réseau de la protéine pour chaque ions chlore. 
+ce dossier contient les résulats obtenu de gRINN pour chaque ions chlore identifié comporte 7 sous-dossier dont les 6 contient pour chacun les résultats pour un ion donné. 
+* le dernier dossier csv_files contient les fichiers csv conentant des informations sur le réseau de la protéine pour chaque ions chlore. 
 
 
 
