@@ -18,5 +18,17 @@ La méthode utilisée est la suivante:
 * Récupérer les fragments de trajectoires pour chaque chlore à l'aide de la commande gmx trjconv 
 * Lancer pour chacune de ces trajectoires une simulation sur gRINN 
 * Enfin analyser les résultats de gRINN 
+# Dossiers du projets
+Les données de ce projet sont réparties dans quatre dossiers principaux :
+## le dossier GROMACS_simulations-folder
+Ce dossier comporte 5 sous dossier dont:
+* com_coord_for_sites : contient les coordonnées des centre de masses pour differents sites
+* coordonnes_without-COM : contient les coordonnées de chaque atoms d'un site donnée
+* index file: contient le fichier index dans lequel nous avons créé des groupes d'atomes qui composent chaque site
+* main file : contient les fichiers necessaires pour nos simulations gromacs dont wt_start.pdb la structure protéique, wt_rep.tpr le fichier de topologie et wt_rep-100ps.xtc la trajectoire 
+* pairdist : contient les fichiers de distances Cl-site et le script python pour identifier les chlores et reprénter les distances
+* script_folder contient essnetiellement les script Gromacs
+* simple_distance est un dossier qui contient quelque fichier de test
+* 
 
 
