@@ -18,9 +18,9 @@ La méthode utilisée est la suivante:
 * Récupérer les fragments de trajectoires pour chaque chlore à l'aide de la commande gmx trjconv 
 * Lancer pour chacune de ces trajectoires une simulation sur gRINN 
 * Enfin analyser les résultats de gRINN 
-# Dossiers du projets
+## Dossiers du projets
 Les données de ce projet sont réparties dans quatre dossiers principaux :
-## le dossier GROMACS_simulations-folder
+## GROMACS_simulations-folder
 Ce dossier comporte 5 sous dossier dont:
 * com_coord_for_sites : contient les coordonnées des centre de masses pour differents sites
 * coordonnes_without-COM : contient les coordonnées de chaque atoms d'un site donnée
@@ -29,6 +29,13 @@ Ce dossier comporte 5 sous dossier dont:
 * pairdist : contient les fichiers de distances Cl-site et le script python pour identifier les chlores et reprénter les distances
 * script_folder contient essnetiellement les script Gromacs
 * simple_distance est un dossier qui contient quelque fichier de test
-* 
+## fragments_trajectoires_pour_chaque_chlore
+ce dossier contient les fraguement de trajectoires que l'on a extrait pour chaque ions chlore identifiés ainsi que les fichiers mywt_rep_dry.tpr et glut1+glc_in_bilayer_new.top que l'on a créé en modifiant les origrinaux( enlever tous les atoms non protéiques) pour lancer la simulation sur gRINN
+## gRinn_results 
+ce dossier contient les résulats obtenu de gRINN pour chaque ions chlore identifié. A chaque ion chlore correspond un sous-dossier contenant les résultats pour cet ion.
+* csv_files contient les fichiers csv conentant des informations sur le réseau de la protéine pour chaque ions chlore. 
+
+
+
 
 
