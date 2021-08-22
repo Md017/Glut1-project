@@ -47,7 +47,9 @@ Pour la visualisation de l'ensemble des résultats des simulations sur gRINN, il
 1. Télécharger gRINN à partir du site https://grinn.readthedocs.io/en/latest/download.html en ayant préalablement téléchargé Gromacs si vous ne l'avez pas
 2. Ouvrir un terminal dans le dossier grINN que vous avez téléchargé et décompressé, taper ./grinn puis  cliquer sur View results une fois lancé
 3. selectionner le dossier gRinn_results
-4. choisir un des dossiers nommés du style 
+4. choisir un des dossiers nommés du style ClXXX_siteN
+Pour visualiser les données métriques du réseau, aller dans le dossier csv_files, ouvrir le fichier network_analysis.ipyp et enfin lancer vos simulations selon le site que vous voulez visualiser.
+
 
 
 
