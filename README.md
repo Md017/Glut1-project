@@ -28,9 +28,9 @@ Ce dossier comporte 5 sous dossier dont:
 * main file : contient les fichiers necessaires pour nos simulations gromacs dont wt_start.pdb la structure protéique, wt_rep.tpr le fichier de topologie et wt_rep-100ps.xtc la trajectoire 
 * pairdist : contient les fichiers de distances Cl-site et le script python plot_distances.py pour identifier les chlores et reprénter les distances
 Le script python permet de:
-  - d'identifier les chlores par leurs ID et ainsi que les frames correspondantes
-  - afficher ces information
-  - Visualiser graphiquement les différentes distances pour chaque chlore 
+    - d'identifier les chlores par leurs ID et ainsi que les frames correspondantes
+    - afficher ces information
+    - Visualiser graphiquement les différentes distances pour chaque chlore 
 * script_folder contient essnetiellement les script Gromacs
 * simple_distance est un dossier qui contient quelque fichier de test
 ## fragments_trajectoires_pour_chaque_chlore
@@ -44,10 +44,10 @@ le dernier dossier csv_files contient les fichiers csv conentant des information
 ## Comment visualiser les données ?
 Il suffit de télécharger d'abord le dossier. 
 Pour la visualisation de l'ensemble des résultats des simulations sur gRINN, il faut:
-   * Télécharger gRINN à partir du site https://grinn.readthedocs.io/en/latest/download.html en ayant préalablement téléchargé Gromacs si vous ne l'avez pas
-  * Ouvrir un terminal dans le dossier grINN que vous avez téléchargé et décompressé, taper ./grinn puis  cliquer sur View results une fois lancé
-  * selectionner le dossier gRinn_results
-  * choisir un des dossiers nommés du style ClXXX_siteN. 
+* Télécharger gRINN à partir du site https://grinn.readthedocs.io/en/latest/download.html en ayant préalablement téléchargé Gromacs si vous ne l'avez pas
+*  Ouvrir un terminal dans le dossier grINN que vous avez téléchargé et décompressé, taper ./grinn puis  cliquer sur View results une fois lancé
+*  selectionner le dossier gRinn_results
+*   choisir un des dossiers nommés du style ClXXX_siteN. 
   
  Pour visualiser les données métriques du réseau, aller dans le dossier csv_files, ouvrir le fichier network_analysis.ipyp et enfin lancer vos simulations selon le site que vous voulez visualiser.
 
