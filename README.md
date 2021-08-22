@@ -26,14 +26,24 @@ Ce dossier comporte 5 sous dossier dont:
 * coordonnes_without-COM : contient les coordonnées de chaque atoms d'un site donnée
 * index file: contient le fichier index dans lequel nous avons créé des groupes d'atomes qui composent chaque site
 * main file : contient les fichiers necessaires pour nos simulations gromacs dont wt_start.pdb la structure protéique, wt_rep.tpr le fichier de topologie et wt_rep-100ps.xtc la trajectoire 
-* pairdist : contient les fichiers de distances Cl-site et le script python pour identifier les chlores et reprénter les distances
+* pairdist : contient les fichiers de distances Cl-site et le script python plot_distances.py pour identifier les chlores et reprénter les distances
+Le script python permet de:
+  - d'identifier les chlores par leurs ID et ainsi que les frames correspondantes
+  - afficher ces information
+  - Visualiser graphiquement les différentes distances pour chaque chlore 
 * script_folder contient essnetiellement les script Gromacs
 * simple_distance est un dossier qui contient quelque fichier de test
 ## fragments_trajectoires_pour_chaque_chlore
 ce dossier contient les fraguement de trajectoires que l'on a extrait pour chaque ions chlore identifiés ainsi que les fichiers mywt_rep_dry.tpr et glut1+glc_in_bilayer_new.top que l'on a créé en modifiant les origrinaux( enlever tous les atoms non protéiques) pour lancer la simulation sur gRINN
 ## gRinn_results 
-Ce dossier contient les résulats obtenu de gRINN pour chaque ions chlore identifié comporte 7 sous-dossier dont les 6 contient pour chacun les résultats pour un ion donné. 
-le dernier dossier csv_files contient les fichiers csv conentant des informations sur le réseau de la protéine pour chaque ion chlore. 
+Ce dossier contient les résulats obtenu de gRINN pour chaque ions chlore identifié et comporte 7 sous-dossier dont les 6 contiennent pour chacun les résultats pour un ion donné. 
+le dernier dossier csv_files contient les fichiers csv conentant des informations sur le réseau de la protéine pour chaque ion chlore ainsi qu'un script network_analysis.ipyp qui permet de :
+* visualiser les données métriques issues des résultats network analysis de gRINN
+* Afficher le Top n des résidues avec les valeurs de BC et/ou de CC les plus élevées pour chaque fragment de trajectoire à l'aide de la fonction top_n_highest_BC_AND_CC(data, n) et de les visualiser graphiquement à l'aide plot_bar(data, title, image_title)
+* faire pareil pour chaque site 
+## Comment visualiser les données ?
+Il suffit de télécharger d'abord le dossier. 
+Pour la visualisation des résultats des simulations sur gRINN, il faut:
 
 
 
