@@ -7,7 +7,7 @@ import time
 
 
 
-def get_distances_forAllFrames(cl_file,threshold):
+def get_distances_forAllFrame(cl_file,threshold):
 	"""function that return distances for all frames as a matrix"""
 
 	all_frame_distances = []
